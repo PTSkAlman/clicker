@@ -56,8 +56,9 @@ function step(timestamp) {
   mpsTracker.textContent = moneyPerSecond;
   followerTracker.textContent = moneyPerClick;
 
-  if (timestamp >= last + 1000) {
-    money += moneyPerSecond;
+  
+  if (timestamp >= last + 1000/60) {
+    money += moneyPerSecond/60;
     last = timestamp;
   }
   window.requestAnimationFrame(step);
@@ -96,14 +97,24 @@ upgrades = [
     amount: 1
   },
   {
-    name: 'Bomb Shooter',
+    name: 'Boomerang Monkey',
     cost: 100,
     amount: 10
   },
   {
-    name: 'Super Monkey',
+    name: 'Ninja Monkey',
+    cost: 500,
+    amount: 55
+  },
+  {
+    name: 'Wizard Monkey',
     cost: 1000,
-    amount: 100
+    amount: 120
+  },
+  {
+    name: 'Super Monkey',
+    cost: 3000,
+    amount: 350
   }
 ]
 
@@ -143,9 +154,9 @@ function createCard(upgrade) {
       upgrade.cost *= 1.5;
       cost.textContent = 'costs ' + upgrade.cost + ' bananas';
       moneyPerSecond += upgrade.amount;
-      message('Grattis du har en ny följare!', 'success');
+      message('You have a new moneky!', 'success');
     } else {
-      message('Du har inte råd.', 'warning');
+      message('Not enough bananas', 'warning');
     }
   });
 

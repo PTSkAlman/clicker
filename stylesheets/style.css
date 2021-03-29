@@ -3,6 +3,13 @@ img {
   max-width: 100%;
 }
 
+body {
+  background-image: url(/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 footer {
   margin-top: auto;
   padding: 2rem 0;
