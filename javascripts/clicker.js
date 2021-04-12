@@ -115,6 +115,16 @@ upgrades = [
     name: 'Super Monkey',
     cost: 3000,
     amount: 350
+  },
+  {
+    name: 'True Sun God',
+    cost: 1000000,
+    amount: 1000000
+  },
+  {
+    name: 'Avatar of the Vengeful Monkey',
+    cost: 1000000000,
+    amount: 2000000000
   }
 ]
 

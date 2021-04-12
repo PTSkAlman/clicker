@@ -30,6 +30,11 @@ footer {
   width: 128px;
   height: 164px;
 }
+#click:active {
+  transition: none;
+  width: 100px;
+  height: 120px;
+}
 
 #msgbox {
   width: 100%;
