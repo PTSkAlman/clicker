@@ -18,16 +18,27 @@ footer {
 /* clicker */
 #click {
   background: transparent;
+  background-image: url("/BTD6Red.png");
+  background-size: cover;
   display: block;
   border: none;
   outline: none;
-  width: 64px;
-  height: 72px;
+  width: 72px;
+  height: 94px;
   font-size: 2rem;
-  transition: 500ms;
+  transition: 250ms;
 }
 #click:hover {
-  background-color: aqua;
+  width: 128px;
+  height: 164px;
+}
+#click:active {
+  transition: none;
+}
+#hitmarker {
+  position: relative;
+  position: absolute;
+  top: 82%;
 }
 
 #msgbox {
