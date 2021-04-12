@@ -17,9 +17,17 @@ footer {
 
 /* clicker */
 #click {
-  width: 8rem;
-  height: 8rem;
+  background: transparent;
+  display: block;
+  border: none;
+  outline: none;
+  width: 64px;
+  height: 72px;
   font-size: 2rem;
+  transition: 500ms;
+}
+#click:hover {
+  background-color: aqua;
 }
 
 #msgbox {

@@ -57,7 +57,7 @@ function step(timestamp) {
   followerTracker.textContent = moneyPerClick;
 
   
-  if (timestamp >= last + 1000/60) {
+  if (timestamp >= (last + 1000)/60) {
     money += moneyPerSecond/60;
     last = timestamp;
   }
