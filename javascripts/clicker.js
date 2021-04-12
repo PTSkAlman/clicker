@@ -60,7 +60,6 @@ function step(timestamp) {
   if (timestamp >= (last + 1000)/60) {
     money += moneyPerSecond/60;
     last = timestamp;
-    hideImg();
   }
   window.requestAnimationFrame(step);
 }
@@ -181,12 +180,4 @@ function message(text, type) {
   setTimeout(() => {
     p.parentNode.removeChild(p);
   }, 2000);
-}
-
-function hideImg() {
-  document.getElementById("hitmarker").style.visibility = "hidden";
-}
-
-function showImg() {
-  document.getElementById("hitmarker").style.visibility = "visible";
 }
