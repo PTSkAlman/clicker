@@ -32,3 +32,5 @@ Vi har tre veckor nu mellan sportlovet(10) och påsklovet(14). Dock bara två pa
 Redovisning + post mortem blir måndag vecka 16ish.
 
 Tack [Malte](https://github.com/Mafrans) för lite ideér.
+
+https://ptskalman.github.io/clicker/
